@@ -61,6 +61,8 @@ main{
   padding: 50px 62px;
   position: relative;
   white-space: nowrap;
+  width:500px;
+  left:80px;
 }
 
 .main-top-text-sub{
@@ -94,7 +96,7 @@ main{
   font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
   font-size: 14px;
   gap: 6px;
-  left: 32px;
+  left: 126px;
   line-height: 1.5;
   position: absolute;
 }
@@ -134,8 +136,15 @@ main{
   letter-spacing: initial;
   line-height: 1.8;
   margin-top: 8px;
+  text-align: center;
 }
 
+.about-head-title{
+  text-align: center;
+  font-size:36px;
+  font-weight:1.5;
+  letter-spacing:0.05em;
+}
 
 .about-body{
   -ms-grid-columns: (1fr)[2];
@@ -160,14 +169,10 @@ main{
 
 
 
-.contact-body-title{
-  color: #fff;
-}
-
-
 .contact{
   margin-top: 144px;
 }
+
 .contact-body{
   background: url(../img/bg-line.jpg) center center/cover;
   border-radius: 56px;
@@ -192,10 +197,15 @@ main{
 
 .contact-body-title{
   align-items: center;
-  display: flex;
   gap: 8px;
   justify-content: center;
-  font-size: 40px;
+  font-size: 36px;
+  height:65px;
+  left:350px;
+  color:#fff;
+  z-index: 10;
+  position:absolute;
+
 }
 
 .contact-body-text{
@@ -205,6 +215,12 @@ main{
   line-height: 1.8;
   margin-top: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-body-line-button{
+  text-align:center;
 }
 
 .contact-body-button{
@@ -225,18 +241,114 @@ main{
 }
 
 .line-icon-link{
-  position:absolute;
-  right:20px;
-  top:50%;
-  transform:translate(0,-50%);
+  font-size:36px;
 }
 
 .line-icon-link::before{
-  content:"\e901";
+  background: radial-gradient(#fff 60%, transparent 60%);
+  color: #00c300;
+  content: "\e900";
 }
 
 .l-footer{
   border-top: solid 1px #eee;
   margin-top: 80px;
   text-align: center;
+}
+
+.footer-inner{
+  padding:56px 24px 48px;
+}
+
+.footer-siteinfo{
+  text-align: center;
+}
+.footer-siteinfo-logo{
+  display:block;
+  text-align: center;
+}
+
+.footer-siteinfo-link{
+  color: #666;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 24px;
+}
+
+.footer-sns-list{
+  display:flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.footer-sub{
+  border-top:solid 1px #eee;
+  color:#666;
+  font-family:"Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  padding: 38px 24px 33px;
+}
+
+
+.footer-container{
+  bottom: 16px;
+  position: fixed;
+  right: 16px;
+  font-size:36px;
+}
+
+
+.footer-line{
+  align-items: center;
+  background-color: #5FDF5B;
+  border-radius: 16px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 22px 20px 22px 24px;
+  font-size: 36px;
+}
+
+
+.footer-line-text{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  margin-left: 13px;
+  text-align: left;
+}
+
+
+.line-icon-link{
+  font-size:36px;
+}
+
+.line-icon-link::before{
+  background: radial-gradient(#fff 60%, transparent 60%);
+  color: #00c300;
+  content: "\e900";
+}
+
+.icon-link{
+  color: #fff;
+  font-size: 18px;
+  margin-left: 35px;
+}
+
+.icon-link:before{
+  content:"\e901";
+}
+
+.icon-instagram:before{
+  content:"\e900";
+}
+
+.icon-twitter:before{
+  content:"\ea96";
 }
